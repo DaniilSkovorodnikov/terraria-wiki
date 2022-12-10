@@ -1,0 +1,334 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+}
+
+h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+a:active{
+    opacity: 0.5;
+}
+
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero-block */
+.page-header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 70px;
+    padding-bottom: 55px;
+    background-image: url("img/hero-block.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+.message{
+    width: max-content;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: rgba(27, 27, 27, 0.5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.classes{
+    width: 80%;
+    margin: auto auto 0;
+    justify-content: space-between;
+    display: flex;
+}
+
+/* Class */
+.class{
+    height: 675px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.class.summoner{
+    background-color: #0a0b12;
+}
+
+.class.melee{
+    background: #110603;
+}
+
+.class.ranged{
+    background: #030E0A;
+}
+
+.class.mage{
+    background: #11090D;
+}
+
+.bosses{
+    width: 80%;
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(5, auto);
+}
+
+.boss__title{
+    width: 150px;
+    height: 37px;
+    margin: 0 auto 15px;
+    background: rgba(48, 48, 48, 0.35);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    background: rgba(48, 48, 48, 0.35);
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.items__inner-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item{
+    padding-left: 25px;
+    position: relative;
+}
+
+.shotgun,.miniacula,.musket,.undertaker{
+    padding-left: 40px;
+}
+
+.item::before{
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 15px;
+}
+
+.finch-stick::before{
+    content: url("img/finch-stick.png");
+}
+
+.flinx-stick::before{
+    content: url("img/flinx-stick.png");
+}
+
+.flinx-coat::before{
+    content: url("img/flinx-coat.png");
+}
+
+.hermes-boots::before{
+    content: url("img/hermes-boots.png");
+}
+
+.clound-in-jar::before{
+    content: url("img/cloud-in-jar.png");
+}
+
+.spikegrab::before{
+    content: url("img/spikegrab.png");
+}
+
+.animal-claws::before{
+    content: url("img/animal-claws.png");
+}
+
+.obsidian-armor::before{
+    content: url("img/obsidian-armor.png");
+}
+
+.hornet-stick::before{
+    content: url("img/hornet-stick.png");
+}
+
+.hornet-armor::before{
+    content: url("img/hornet-armor.png");
+}
+
+.pygmy-necklace::before{
+    content: url("img/pygmy-necklace.png");
+}
+
+.melee-bottle::before{
+    content: url("img/melee-bottle.png");
+}
+
+.devils-stick::before{
+    content: url("img/devils-stick.png");
+}
+
+.vertebral-loop::before{
+    content: url("img/vertebral-loop.png");
+}
+
+.enchanted-boomerang::before{
+    content: url("img/enchanted-boomerang.png");
+}
+
+.enchanted-sword::before{
+    content: url("img/enchanted-sword.png");
+}
+
+.trident::before{
+    content: url("img/trident.png");
+}
+
+.platinum-armor::before{
+    content: url("img/platinum-armor.png");
+}
+
+.gold-armor::before{
+    content: url("img/gold-armor.png");
+}
+
+.ice-sword::before{
+    content: url("img/ice-sword.png");
+}
+
+.grass-blade::before{
+    content: url("img/grass-blade.png");
+}
+
+.spiked-chakram::before{
+    content: url("img/spiked-chakram.png");
+}
+
+.beer::before{
+    content: url("img/beer.png");
+}
+
+.star-rage::before{
+    content: url("img/star-rage.png");
+}
+
+.amazonia::before{
+    content: url("img/amazonia.png");
+}
+
+.bloody-armor::before{
+    content: url("img/bloody-armor.png");
+}
+
+.shadow-armor::before{
+    content: url("img/shadow-armor.png");
+}
+
+.bee-yo::before{
+    content: url("img/bee-yo.png");
+}
+
+.volcano::before{
+    content: url("img/volcano.png");
+}
+
+.hell-armor::before{
+    content: url("img/hell-armor.png");
+}
+
+.night-edge::before{
+    content: url("img/night-edge.png");
+}
+
+.gold-bow::before{
+    content: url("img/gold-bow.png");
+}
+
+.platinum-bow::before{
+    content: url("img/platinum-bow.png");
+}
+
+.shotgun::before{
+    content: url("img/shotgun.png");
+}
+
+.miniacula::before{
+    content: url("img/miniacula.png");
+}
+
+.musket::before{
+    content: url("img/musket.png");
+}
+
+.undertaker::before{
+    content: url("img/undertaker.png");
+}
+
+.ammo-box::before{
+    content: url("img/ammo-box.png");
+}
+
+.necro-armor::before{
+    content: url("img/necro-armor.png");
+}
+
+.sparks-rod::before{
+    content: url("img/sparks-rod.png");
+}
+
+.diamond-stick::before{
+    content: url("img/diamond-stick.png");
+}
+
+.ruby-stick::before{
+    content: url("img/ruby-stick.png");
+}
+
+.water-shoot::before{
+    content: url("img/water-shoot.png");
+}
+
+.crimson-stick::before{
+    content: url("img/crimson-stick.png");
+}
+
+.jungle-armor::before{
+    content: url("img/jungle-armor.png");
+}
+
+.nature-gift::before{
+    content: url("img/nature-gift.png");
+}
+
+.space-pistol::before{
+    content: url("img/space-pistol.png");
+}
+
+.meteorite-armor::before{
+    content: url("img/meteorite-armor.png");
+}
